@@ -3,7 +3,12 @@ import './App.css';
 function App() {
   return (
     <div id="quote-box" className="quote-box">
-      <h1>REACT</h1>
+      <p id="text">REACT</p>
+      <p id="author"></p>
+      <div class="row">
+      <i id="tweet-quote"></i>
+      <button id="new-quote">new quote</button>
+      </div>
     </div>
   );
 }
