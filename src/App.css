@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+:root{
+  --color:#333;
+}
+
 * , ::before, ::after{
   margin: 0;
   padding: 0;
@@ -7,8 +11,7 @@
 }
 
 body{
-  background-color: green;
-  color: #333;
+  background-color: var(--color);
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   display: flex;
@@ -26,5 +29,37 @@ body{
   display: table;
   background-color: #fff;
   text-align: center;
+}
+
+.colored{
+  background-color: var(--color);
+  border:none;
+}
+
+.text-colored{
+  color: var(--color);
+}
+
+#text{
+  font-size:1.5rem;
+}
+
+#text::before{
+  content:'"';
+}
+#author{
+  text-align: end;
+  margin: 10px 0 40px;
+}
+#author::before{
+  content:'-';
+}
+
+#new-quote{
+  padding:7px
+}
+
+.row{
+  justify-content: space-between;
 }
 
